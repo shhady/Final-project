@@ -1,0 +1,31 @@
+.CourtsList{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr)
+}
+.freeCourtsList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+.btnsFilterFreePaid{
+    display: flex
+}
+.btnFilterFreePaid{
+    height: 2rem;
+    background-color: rgb(233, 73, 73);
+    margin: .5rem;
+}
+.search{
+    height: 2rem;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.sportBTN{
+    height: 2rem;
+    margin:.5rem;
+    background-color: rgb(132, 135, 133);
+}
+
+.reserveBTN{
+    width: 100%;
+}

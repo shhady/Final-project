@@ -1,0 +1,22 @@
+.MainContainerRegister{
+    margin-top:50px;
+    background-color: black;
+    position:fixed;
+    top:15px;
+    width:90%;
+    /* margin-left:3rem; */
+}
+.formContainer{
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 12);
+}
+input{
+    width: 99%
+}

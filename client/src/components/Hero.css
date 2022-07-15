@@ -1,0 +1,39 @@
+.Hero{
+    background-image: url("https://images.pexels.com/photos/1662176/pexels-photo-1662176.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: auto;
+}
+
+.time{
+    margin-left: .5rem
+}
+
+.submit{
+    width: 15.5rem;
+    margin-top: 2rem
+}
+.title{
+    text-align: center;
+}
+p{
+    text-align: center;
+
+    margin: auto;
+}
+button{
+    width: 100%;
+    cursor: pointer;
+}

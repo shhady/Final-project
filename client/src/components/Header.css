@@ -1,0 +1,28 @@
+.Header{
+    position:fixed;
+    top:0;
+    height: 10vh;
+    background-color: black;
+    opacity: .8;
+    z-index: 1;
+    color: white;
+}
+
+.HeaderInfo{
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+}
+.Auth{
+    display: flex;
+}
+.signup{
+    margin-left: 1rem;
+}
+.signup{
+    background-color: white;
+    width: 7rem;
+}
