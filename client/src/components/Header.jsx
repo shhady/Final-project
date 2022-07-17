@@ -26,7 +26,14 @@ export default function Header() {
     <div className="Header">
       <div className="HeaderInfo">
         <Link to="/">
-          <div style={{ color: "white" }}>Logo</div>
+          <div style={{ color: "white" }}>
+            {" "}
+            <img
+              src="https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001-b5fb3d8d8469ab744d9e97706fa67bc5c0e4fa40-s1100-c50.jpg"
+              alt="logo"
+              height="30px"
+            />
+          </div>
         </Link>
 
         <div className="Auth">

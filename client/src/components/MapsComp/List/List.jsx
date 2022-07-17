@@ -25,7 +25,7 @@ export default function List() {
     };
     search();
   }, []);
-  console.log(allFreeCourts);
+
   useEffect(() => {
     const filteredFree = allFreeCourts.filter((court) =>
       court.address.toLowerCase().includes(term)
@@ -42,25 +42,24 @@ export default function List() {
     search();
   }, []);
 
-  console.log(allCourts);
+  useEffect(() => {
+    const filtered = allCourts.filter((court) =>
+      court.address.toLowerCase().includes(term)
+    );
+    setFilteredCourts(filtered);
 
-  // useEffect(() => {
-  //   const filtered = allCourts.filter((court) =>
-  //     court.address.toLowerCase().includes(term)
-  //   );
-  //   setFilteredCourts(filtered);
-
-  //   // console.log(filtered);
-  // }, [term, allCourts]);
+    // console.log(filtered);
+  }, [term, allCourts]);
 
   if (!allCourts) return null;
   if (!filteredCourts) return null;
 
   const insertData = () => {
-    return allCourts.map((court) => {
+    return filteredCourts.map((court, idx) => {
+      console.log(court._id);
       return (
         <div
-          key={court._id}
+          key={idx}
           style={{ border: "1px solid black" }}
           className="CourtsList"
         >
@@ -79,10 +78,11 @@ export default function List() {
   };
 
   const insertDataFreeCourt = () => {
-    return filteredFreeCourts.map((court) => {
+    return filteredFreeCourts.map((court, idx) => {
+      console.log(court._id);
       return (
         <div
-          key={court._id}
+          key={idx}
           style={{ border: "1px solid black" }}
           className="freeCourtsList"
         >

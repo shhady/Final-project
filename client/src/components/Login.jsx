@@ -16,7 +16,7 @@ export default function Login({ setShowLogInBox, myStorage, setCurrentUser }) {
     try {
       const res = await axios.post(" http://localhost:8080/users/login", user);
       myStorage.setItem("user", res.data.email);
-      console.log(res.data);
+
       setCurrentUser(res.data);
 
       setError(false);

@@ -1,11 +1,4 @@
-.CourtsList{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
-}
-.freeCourtsList{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr)
-}
+
 .btnsFilterFreePaid{
     display: flex
 }
@@ -16,8 +9,7 @@
 }
 .search{
     height: 2rem;
-    width: 50%;
-    margin-left: 25%;
+    width: 97%;
 }
 
 .sportBTN{

@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const courtRoute = require("./routes/courts");
 const userRoute = require("./routes/users");
 const freeCourtRoute = require("./routes/freecourts");
+const teamRoute = require("./routes/team");
 const cors = require("cors");
 const app = express();
 dotenv.config();
@@ -18,6 +19,7 @@ app.use(cors());
 app.use("/courts", courtRoute);
 app.use("/users", userRoute);
 app.use("/freecourt", freeCourtRoute);
+app.use("/team", teamRoute);
 
 app.listen(8080, () => {
   console.log("server running on Port 8080");

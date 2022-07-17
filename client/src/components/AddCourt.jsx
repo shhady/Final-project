@@ -80,7 +80,7 @@ export default function AddCourt() {
     };
 
   const renderSuggestions = () =>
-    data.map((suggestion) => {
+    data.map((suggestion, idx) => {
       const {
         place_id,
         structured_formatting: { main_text, secondary_text },
@@ -89,7 +89,7 @@ export default function AddCourt() {
       return (
         <button
           style={{ width: "60%" }}
-          key={place_id}
+          key={place_id + idx}
           onClick={handleSelect(suggestion)}
         >
           <strong>{main_text}</strong> <small>{secondary_text}</small>

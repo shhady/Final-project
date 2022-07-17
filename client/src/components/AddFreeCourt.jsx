@@ -82,14 +82,14 @@ export default function AddCourt() {
     };
 
   const renderSuggestions = () =>
-    data.map((suggestion) => {
+    data.map((suggestion, idx) => {
       const {
         place_id,
         structured_formatting: { main_text, secondary_text },
       } = suggestion;
-
+      console.log(place_id);
       return (
-        <button key={place_id} onClick={handleSelect(suggestion)}>
+        <button key={place_id + idx} onClick={handleSelect(suggestion)}>
           <strong>{main_text}</strong> <small>{secondary_text}</small>
         </button>
       );

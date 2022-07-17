@@ -8,6 +8,7 @@ import AddFreeCourt from "./components/AddFreeCourt";
 import { BrowserRouter, Route } from "react-router-dom";
 import Register from "./components/Register";
 import GoogleMapFunc from "./components/GoogleMap";
+import FindGame from "./components/FindGame";
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/AddFreeCourt" exact component={AddFreeCourt} />
         <Route path="/Register" exact component={Register} />
         <Route path="/GoogleMap" exact component={GoogleMapFunc} />
+        <Route path="/FindGame" exact component={FindGame} />
       </BrowserRouter>
     </div>
   );
